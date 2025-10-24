@@ -127,3 +127,25 @@ button:hover {
   display: grid;
   place-items: center;
 }
+.breadcrumb-header
+.breadcrumb {
+  padding: 0 0.5rem;
+    padding-left: 10px; 
+  height: 10px;
+   position:  fixed;
+}
+
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: end;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 0.25rem;
+  content: ">";
+}
